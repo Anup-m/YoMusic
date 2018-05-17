@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="10dp"
+        android:background="@drawable/shape2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <ImageButton
+                android:id="@+id/mCUp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                app:srcCompat="@drawable/ic_mc_up_arrow"
+                style="?android:borderlessButtonStyle"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/mcAlbumArt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/song_album_art"
+                android:transitionName="album_art_shared"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/mCSongName"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shape of You"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:fadingEdge="horizontal"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mCArtistName"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ed Shreen"
+                android:singleLine="true"
+                android:fadingEdge="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/mCPlayPause"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="12dp"
+                android:layout_gravity="center"
+                android:tag="paused"
+                app:srcCompat="@drawable/ic_mc_play"
+                style="?android:borderlessButtonStyle" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/mCSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:max="10"
+            android:progress="0"
+            android:thumbTint="@android:color/transparent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="yomusic.developer.it.yomusic">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/yo_music_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/yo_music_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".AllSongsActivity"
+            android:label="All Songs" />
+
+        <service
+            android:name=".MusicService"
+            android:enabled="true" />
+
+        <activity android:name=".DisplayTracksActivity" />
+        <activity android:name=".DisplayAlbumAndTracksActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity android:name=".PlayerActivity" />
+
+        <receiver
+            android:name="yomusic.developer.it.yomusic.NotificationReciever"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="yomusic.developer.it.yomusic.next" />
+                <action android:name="yomusic.developer.it.yomusic.previous" />
+                <action android:name="yomusic.developer.it.yomusic.paly" />
+                <action android:name="yomusic.developer.it.yomusic.pause" />
+                <action android:name="yomusic.developer.it.yomusic.duckUp" />
+                <action android:name="yomusic.developer.it.yomusic.duckDown" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".PlayListActivity"/>
+    </application>
+
+</manifest>

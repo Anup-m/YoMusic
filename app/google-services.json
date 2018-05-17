@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "357802422173",
+    "firebase_url": "https://yomusic-a4334.firebaseio.com",
+    "project_id": "yomusic-a4334",
+    "storage_bucket": "yomusic-a4334.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357802422173:android:ac091d975522225f",
+        "android_client_info": {
+          "package_name": "yomusic.developer.it.yomusic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357802422173-pjvgr1rkgm0rn99hljleb6ca1i1vg9he.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "yomusic.developer.it.yomusic",
+            "certificate_hash": "a22ab33a4379ceda2816913ba55ee2c619b169da"
+          }
+        },
+        {
+          "client_id": "357802422173-6ck7vm7873b8v0ddigseiericuju192b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNARdu7mpEfjgULOiaetJV8LY65flh0ME"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357802422173-6ck7vm7873b8v0ddigseiericuju192b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

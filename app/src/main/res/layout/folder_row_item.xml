@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/folderCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/albumArt"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/music_folder" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/folderName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Folder Name"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/folderPath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="/storage/folder"
+                android:layout_marginStart="10dp"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/noOfSongs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 songs"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:textSize="12sp"/>
+
+
+        <ImageView
+            android:id="@+id/overflow"
+            android:layout_width="@dimen/ic_album_overflow_width"
+            android:layout_height="@dimen/ic_album_overflow_height"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/ic_album_overflow_margin_top"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_dots" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+

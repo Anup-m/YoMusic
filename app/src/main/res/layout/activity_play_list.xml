@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yomusic.developer.it.yomusic.PlayListActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape">
+
+        <TextView
+            android:id="@+id/tx_lastPlayed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="  Last Played"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/ic_p_favourite"
+            android:drawableEnd="@drawable/ic_dots"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape">
+
+        <TextView
+            android:id="@+id/tx_recentlyAdded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="  Recently Added"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/ic_p_favourite"
+            android:drawableEnd="@drawable/ic_dots"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape">
+
+        <TextView
+            android:id="@+id/tx_topTracks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="  My Top Tracks"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/ic_p_favourite"
+            android:drawableEnd="@drawable/ic_dots"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape">
+
+        <TextView
+            android:id="@+id/tx_favourites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="  Favourites"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/ic_p_favourite"
+            android:drawableEnd="@drawable/ic_dots"/>
+    </LinearLayout>
+
+</LinearLayout>
+

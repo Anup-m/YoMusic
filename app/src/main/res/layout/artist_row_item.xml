@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/artistCard"
+    app:cardMaxElevation="1dp"
+    android:elevation="1dp"
+    app:cardCornerRadius="2dp"
+    app:cardUseCompatPadding="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/shape2"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/artistImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/dj_dancing_big" />
+
+        <LinearLayout
+            android:id="@+id/details_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLikeViolet">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/artistName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Artist Name"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="10dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/no_of_albums"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1 album"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/no_of_songs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2 songs"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="10dp"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/overflow"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/ic_album_overflow_height"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/ic_album_overflow_margin_top"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_dots"
+                android:tint="@color/colorWhite"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+

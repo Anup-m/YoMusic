@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorGrey">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/pBack"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="20dp"
+                android:background="@null"
+                android:src="@drawable/ic_p_back"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_action_search"
+                    android:layout_gravity="center"/>
+
+
+                <ImageView
+                    android:id="@+id/pOverflow"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_dots"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="35dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/contentImage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/music_folder" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp">
+
+                <TextView
+                    android:id="@+id/contentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="Content Name"/>
+                <TextView
+                    android:id="@+id/contentPath"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="/storage/path" />
+                <TextView
+                    android:id="@+id/contentNoOfSongs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="30 Songs"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

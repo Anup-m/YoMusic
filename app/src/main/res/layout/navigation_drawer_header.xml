@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:gravity="bottom"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    tools:context="yomusic.developer.it.yomusic.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewPP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/nav_header_im_new"
+        android:scaleType="centerCrop"
+        android:contentDescription="TODO" />
+
+</RelativeLayout>
+
+
+
+

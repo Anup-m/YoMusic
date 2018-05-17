@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/id_albums"
+            android:title="Albums"
+            android:icon="@drawable/ic_action_album"/>
+        <item
+            android:id="@+id/id_artists"
+            android:title="Artists"
+            android:icon="@drawable/ic_action_artist"/>
+
+        <item
+            android:title="Folders"
+            android:id="@+id/id_folders"
+            android:icon="@drawable/ic_action_folder"/>
+
+        <item
+            android:title="Songs"
+            android:id="@+id/id_songs"
+            android:icon="@drawable/ic_action_song"/>
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/id_playing_queue"
+            android:title="Playing Queue"
+            android:icon="@drawable/ic_action_playling_queue"/>
+        <item
+            android:id="@+id/id_playlist"
+            android:title="Playlists"
+            android:icon="@drawable/ic_p_playing_queue"/>
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/id_settings"
+                android:title="Settings"
+                android:icon="@drawable/ic_action_settings"/>
+        </menu>
+    </item>
+
+</menu>
+
